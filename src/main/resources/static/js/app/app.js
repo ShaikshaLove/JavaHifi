@@ -22,8 +22,21 @@ angular.module("JavaHifi").config(function($routeProvider){
 
 
 	$routeProvider.when("/core-java",{
-		templateUrl:"js/app/corejava/html/hashcode.html",
+		templateUrl:"js/app/corejava/html/corejava.html",
 	}
 	);
+	
+	
+	$routeProvider.when("/object-list",{
+		templateUrl:"js/app/corejava/html/object-class/object-list.html",
+	}
+	);
+	
+	
+	$routeProvider.when("/hashCode",{
+		templateUrl:"js/app/corejava/html/object-class/hashcode.html",
+	}
+	);
+	
 
 });
