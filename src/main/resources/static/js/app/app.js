@@ -14,11 +14,37 @@ angular.module("JavaHifi").config(function($routeProvider){
 		templateUrl:"js/app/springboot/html/spring-boot.html",
 	}
 	);
+	
+	$routeProvider.when("/spring-boot-into",{
+		templateUrl:"js/app/springboot/html/spring-boot-intro.html",
+	}
+	);
+	
+	$routeProvider.when("/convert-maven-project-2-spring-boot",{
+		templateUrl:"js/app/springboot/html/convert-maven-project-2-spring-boot.html",
+	}
+	);
+	
+	$routeProvider.when("/rest-service",{
+		templateUrl:"js/app/springboot/html/rest-service-exp.html",
+	}
+	);
+	
+	
+	
+	
+	
 
 	$routeProvider.when("/spring-cloud",{
 		templateUrl:"js/app/springcloud/html/spring-cloud.html",
 	}
 	);
+	
+	$routeProvider.when("/spring-cloud-introduction",{
+		templateUrl:"js/app/springcloud/html/spring-cloud-intro.html",
+	}
+	);
+	
 
 
 	$routeProvider.when("/core-java",{
