@@ -3,9 +3,9 @@
 	<div style="height:auto;" class="row mb-2">
 		<div class="col-md-12">
 			<div
-				style="height:auto;" class="row no-gutters border rounded border-danger overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				style="height:auto;" class="row no-gutters border rounded border-danger overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
 				<div class="col p-4 d-flex flex-column position-static">
-					<h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif"  class="text-dark">Creating a rest resource</h5>
+					<h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;padding-bottom: 10px"  class="text-dark">Creating a rest resource</h5>
 				
                      <p class="text-secondary"> Creating a rest service with spring boot is quite easy . After getting a simple spring boot project
                      ,we only have to create rest controller which does the actual work such as serving rest services
@@ -17,7 +17,7 @@
                          <li>@ResponseBody annotation tells the spring container that write the return result of handler method to the body of the response document. spring container uses the value of the produces attribute of mapping annotations to select appropriate message converter to convert the return result of handler method to specific format such as json/xml/string etc. this result is added to the body of the response document</li>
                          <li>Coming to @GetMapping is a annotation and It is used to map a URL pattern to a spring controller's handler method.When the spring container finds the incoming request's URL pattern along with request method is matched with any these mapping annotion's URL pattern and request method, spring container calls that handler method to handle the incoming request</li>
                          <li>@RequestBody annotation tells the spring container to  bind the incoming request payload into pojo class object and provide that object as parameter to handler method. in the above example Weather is pojo class. </li>
-                         <li>@PathVariable annotation injects the value of template variable to handler method.In the above example the parameter name must match with template variable name otherwise spring container wont inject the value. we can also use the annotation like this (@PathVariable("weatherLocationId") String id))</li>
+                         <li>@PathVariable annotation injects the value of template variable to handler method.In the above example the parameter name must match with template variable name otherwise spring container wont inject the value. we can also use the annotation like this (@PathVariable("weatherLocationId") String id)</li>
                       </ul>                    
 				</div>
 			</div>

@@ -124,3 +124,15 @@
     margin-bottom: 0;
   }
   
+  li{
+     padding-bottom: 25px;
+     color: purple;
+     font-family: inherit;
+     font-weight: bold;
+   }
+   
+   p{
+     font: oblique;   
+    }
+ 
+  

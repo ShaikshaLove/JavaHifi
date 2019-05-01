@@ -64,5 +64,21 @@ angular.module("JavaHifi").config(function($routeProvider){
 	}
 	);
 	
+	
+	
+	$routeProvider.when("/servlet-index",{
+		templateUrl:"js/app/j2ee/servlet/html/servlet-index.html",
+	}
+	);
+	
+	
+	
+	$routeProvider.when("/hibernate-index",{
+		templateUrl:"js/app/hibernate/html/hibernate-index.html",
+	}
+	);
+	
+	
+	
 
 });
