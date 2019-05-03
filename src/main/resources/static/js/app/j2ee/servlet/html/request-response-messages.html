@@ -1,0 +1,51 @@
+
+<div style="padding-top: 20px" class="jumbotron">
+	<h2
+		style="color: purple; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">HTTP
+		Request and Response Messages</h2>
+	<p>In this article, we glance at Http request and response
+		document. A HTTP request document and HTTP response document will be
+		designed with some protocol and this protocol is the http protocol. A
+		browser prepares a request message when we try to access a web site
+		and send it to the server. The server reads the request document,
+		which is sent by a browser,and process the request. after The server
+		process the request, server prepares a response document that could be
+		sent back to the browser.</p>
+
+	<h5 style="padding-bottom: 10px 0px 10px 0px; color: green">HTTP
+		Request Message</h5>
+	<ul>
+		<li>Every request message/document has two parts one is header
+			part and other is body part which is request body</li>
+		<li>In the header part of a request message, A browser puts all
+			headers information and whatever we submit the form data that will be
+			placed in the body part of the request message</li>
+		<li>The form data we often call it as payload</li>
+
+		<li>When we log onto a web site, The login credential will be
+			taken by the browser and it prepares a request document by simply
+			placing credentials in the body part of the request. you could see in
+			the below image how a response a request message would be</li>
+	</ul>
+
+	<img class="img-fluid" src="images/servlet/request-document.png" />
+	<h5 style="padding-bottom: 10px 0px 10px 0px; color: green">HTTP
+		Request Response</h5>
+
+	<ul>
+		<li>In the same way of request message/document, Every response
+			document has two parts one is header part and other is body part
+			which is response body</li>
+		<li>A server reads request message, and processes the request
+			once the response for the request is ready the server prepares
+			response message by simply placing response content in response body</li>
+
+		<li>After checking credentials are valid or not,the server sends
+			response document to the browser. you could see in the below image
+			how a response document would be</li>
+	</ul>
+	<img class="img-fluid" src="images/servlet/response-document.png" />
+
+</div>
+
+
