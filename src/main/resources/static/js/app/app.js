@@ -57,6 +57,22 @@ angular.module("JavaHifi").config(function($routeProvider){
 		templateUrl:"js/app/corejava/html/object-class/hashcode-equals.html",
 	}
 	);
+	$routeProvider.when("/getclass-finalize-method",{
+		templateUrl:"js/app/corejava/html/object-class/getclass-finalize-method.html",
+	}
+	);
+	$routeProvider.when("/multithreading",{
+		templateUrl:"js/app/corejava/multithreading/html/multithreading-list.html",
+	}
+	);
+	
+	$routeProvider.when("/main-thread-creation",{
+		templateUrl:"js/app/corejava/multithreading/html/main-thread-creation.html",
+	}
+	);
+	
+	
+	
 	
 	
 	
@@ -88,6 +104,14 @@ angular.module("JavaHifi").config(function($routeProvider){
 	}
 	);
 	
+	
+	
+
+	   /*JSP related routing configuration*/	
+		$routeProvider.when("/jsp-index",{
+			templateUrl:"js/app/j2ee/jsp/html/jsp-index.html"
+		}
+		);
 	
 	
 

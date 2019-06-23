@@ -1,25 +1,38 @@
+
 <div style="padding-top: 20px" class="jumbotron jumbotron-fluid">
 
-	<div style="height:auto;" class="row mb-2">
-		<div class="col-md-12">
-			<div
-				style="height:auto;" class="row no-gutters border rounded border-danger overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
-				<div class="col p-4 d-flex flex-column position-static">
-					<h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;padding-bottom: 10px"  class="text-dark">Converting a simple maven project into spring boot project</h5>
-				
-                     <p class="text-dark"> Converting a simple maven java project into spring boot project is easy and simple. we only make our maven project as the child project to spring-boot-starter-parent-project.
-                     
-                     <img  src="images/spring-boot/simple-spring-boot-app.png" class="img-fluid" > 
-                       <ul style="padding-top: 20px" class="text-dark">
-                         <li>In step-2, we just made our project as child, so all default behavior could be inherited into our project</li>
-                         <li>Spring boot does 80% of the configuration to run spring application and we only have to configure 20% the configuration </li>
-                         <li>application.properties file, which is at class path,allows us to modify the default configuration</li>
-                         <li>Spring boot configures required configuration to run spring applications by looking available jars in class path.
-                         <li>You don't need to provide version in step-3,the version will be picked from parent project by maven build tool to download the required jars from remote repository </li>
-                      </ul>                    
-				</div>
-			</div>
-		</div>
-	</div>
+    <div style="height:auto;" class="row mb-2">
+        <div class="col-md-12">
+            <div style="height:auto;" class="row no-gutters border rounded border-danger overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;padding-bottom: 10px"  class="text-dark">Converting a simple maven project into spring boot project</h5>
+
+                    <p class="text-dark"> Converting a simple maven java project into spring boot project is easy and simple. we only make our maven project as the child project to spring-boot-starter-parent-project.
+
+                        <img  src="images/spring-boot/simple-spring-boot-app.png" class="img-fluid" >
+                    <ul style="padding-top: 20px" class="text-dark">
+                        <li>In step-2, we just made our project as child, so all default behavior could be inherited into our project</li>
+                        <li>Spring boot does 80% of the configuration to run spring application and we only have to configure 20% the configuration </li>
+                        <li>application.properties file, which is at class path,allows us to modify the default configuration</li>
+                        <li>Spring boot configures required configuration to run spring applications by looking available jars in class path.
+                        <li>You don't need to provide version in step-3,the version will be picked from parent project by maven build tool to download the required jars from remote repository </li>
+                    </ul>
+
+
+                    <img  src="images/spring-boot/spring-boot-run.png" class="img-fluid" >
+
+                    <ul style="padding-top: 20px" class="text-dark">
+                        <li>@EnableAutoConfiguration annotation adds auto configuration feature to our application.</li>
+                        <li>When spring boot finds the auto configuration is to be enabled,Spring boot looks into every jar which we added in the classpath to get spring.factories file</li>
+                        <li>spring.factories file have the  auto-configuration details. Spring boot configures the coniguration on the basis of @Conditional and @Configuration annotations</li>
+                        <li>@ComponentScan does add component scan feature  to the package where StartApp.java file is located. interestingly it's sub packages also gets scanned</li>
+                        <li>All the beans which are annotated with Stereo type annotations gets identified and will be registered in th spring container. </li>
+                        <li>The classes,which are annotated with stereo type annotations,must be placed in the package or in the subpackage of the package where the StartpApp.java file is located</li>
+                        <li>here,@Configuration gives a chance to do extra configuration with @Bean annotation </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
